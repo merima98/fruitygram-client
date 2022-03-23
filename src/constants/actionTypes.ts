@@ -1,0 +1,1 @@
+export const GET_ENGLISH_WORD = "[WORD] GET ENGLISH WORD";
