@@ -1,7 +1,7 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./features/header/Header";
-import WordList from "./features/words/WordList";
+import Word from "./features/words/Word";
 import Home from "./features/home/Home";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pronunciation" element={<WordList />} />
+          <Route path="/pronunciation" element={<Word />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
