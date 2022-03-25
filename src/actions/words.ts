@@ -1,5 +1,4 @@
 import * as api from "../api/api";
-
 import { GET_ENGLISH_WORD } from "../constants/actionTypes";
 
 export const getEnglishWord = () => async (dispatch: any) => {
