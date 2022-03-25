@@ -7,4 +7,5 @@ function getEnglishWord() {
 const exports = {
     getEnglishWord
 };
+
 export default exports;
