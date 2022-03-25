@@ -1,4 +1,4 @@
-import { GET_ENGLISH_WORD } from "../constants/actionTypes";
+import { GET_ENGLISH_WORD } from "../../constants/actionTypes";
 
 const initialState = {
     word: {},
