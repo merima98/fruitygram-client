@@ -16,7 +16,6 @@ function Home() {
   const backgroundColor = useColorModeValue("blue.800", "yellow.300");
   const textColor = useColorModeValue("white", "black");
   const linkColor = useColorModeValue("yellow.300", "blue.800");
-
   const { isOpen, onToggle } = useDisclosure();
   const MotionBox = motion<BoxProps>(Box);
   const animationBox = {
