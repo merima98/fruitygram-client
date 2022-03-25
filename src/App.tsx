@@ -1,22 +1,21 @@
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import { LAYOUT_ROUTES } from "./routing/routes";
+import Header from "./features/header/Header";
+import WordList from "./features/words/WordList";
+import Home from "./features/home/Home";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {LAYOUT_ROUTES.map((item) => {
-          return (
-            <Route
-              key={item.path}
-              path={item.path}
-              element={<item.element />}
-            />
-          );
-        })}
-      </Routes>
-    </BrowserRouter>
+    <ChakraProvider>
+      <ColorModeScript initialColorMode="dark" />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pronunciation" element={<WordList />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 
