@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { reducerWord } from "./words";
+import { reducerWord } from "./wordReducer";
 
 const rootReducer = combineReducers({
     reducerWord: reducerWord,
