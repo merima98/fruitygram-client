@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { MessageSquare } from "react-feather";
 
 import { getEnglishWord } from "../../actions/words";
 
@@ -32,6 +33,9 @@ function WordList() {
 
   return (
     <Center mt={60} flexDirection={"column"}>
+      <Box mb={4}>
+        <MessageSquare height={60} width={60} />
+      </Box>
       <Flex mb={15}>
         <Box textAlign={"center"}>
           <Box mb={5}>
